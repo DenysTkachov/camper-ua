@@ -1,26 +1,22 @@
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
-import './App.css';
-import MainInformation from './MainInformation/MainInformation';
+import { lazy } from "react";
+import { Route, Routes } from "react-router-dom";
+import { AppLayout } from "./components/AppLayout/AppLayout";
 
-// const HomePage = lazy(() => import('./pages/HomePage'));
-const CatalogPage = lazy(() => import('./pages/CatalogPage'));
-const FavoritesPage = lazy(() => import('./pages/FavoritesPage'));
+const WelcomePage = lazy(() => import("./pages/WelcomePage"));
+const HomePage = lazy(() => import("./pages/HomePage"));
+const FavouritePage = lazy(() => import("./pages/FavouritePage"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Switch>
-            <Route exact path="/" component={MainInformation} />
-            <Route path="/catalog" component={CatalogPage} />
-            <Route path="/favorites" component={FavoritesPage} />
-            <Redirect to="/" />
-          </Switch>
-        </Suspense>
-      </div>
-    </Router>
+    <Routes>
+      <Route path="/" element={<AppLayout />}>
+        <Route index element={<WelcomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/favourite" element={<FavouritePage />} />
+      </Route>
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 }
 
