@@ -1,38 +1,15 @@
+import styles from "./MainInformationContainer.module.css";
 
-import './MainInformation.module.css';
-
-const MainInformation = () => {
+export const MainInformation = () => {
   return (
-    <div className="main-information">
-      <header>
-        <h1>Welcome to Camper Rentals</h1>
-      </header>
-      <section className="about-section">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci quis velit commodo convallis.
-          Sed sed bibendum leo, id fringilla magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia curae; Sed eleifend nisi ut nisi efficitur, non auctor libero lacinia. Donec varius libero
-          id turpis finibus, ac ultricies nunc viverra. Praesent id libero eros.
-        </p>
-      </section>
-      <section className="services-section">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Wide selection of campers</li>
-          <li>Flexible rental options</li>
-          <li>24/7 customer support</li>
-        </ul>
-      </section>
-      <section className="contact-section">
-        <h2>Contact Us</h2>
-        <p>
-          Phone: 123-456-7890<br />
-          Email: info@camperrentals.com
-        </p>
-      </section>
+    <div className={styles.MainInformationContainer}>
+      <div className={styles.GreetingWrapper}>
+        <h2 className={styles.Greeting}>
+          
+Explore the world with Camper-UA - your trusted partner for exhilarating expeditions and outdoor escapades! Embark on unforgettable journeys and create lasting memories as you traverse landscapes and immerse yourself in nature`s wonders. Whether you`re seeking thrilling adventures or serene retreats, Camper-UA has you covered with a wide range of options tailored to your preferences. Get ready to experience the great outdoors like never before with Camper-UA by your side!
+        </h2>
+      </div>
+      <div className={styles.ImageWrapper}></div>
     </div>
   );
-}
-
-export default MainInformation;
+};
