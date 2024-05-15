@@ -1,0 +1,26 @@
+.headerContainer {
+    margin: 0 auto;
+    padding: 30px 64px;
+    max-width: 1440px;
+    border-bottom: 1px solid var(--loadMoreBorderColor);
+  }
+  
+  .headerNavigation {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .navContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .headerLink {
+    font-size: var(--fonts-smSize);
+    color: var(--colors-dark);
+    transition: color var(--transitionDurAndFunc);
+  
+    &:hover {
+      color: var(--colors-hoverColor);
+    }
+  }

@@ -1,0 +1,26 @@
+.ListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .CarList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .LoadMore {
+    width: 145px;
+    height: 56px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid var(--loadMoreBorderColor);
+    border-radius: var(--radius-xlg);
+    transition: border var(--transitionDurAndFunc);
+  
+  }
+  
+  .LoadMore:hover {
+    border: 1px solid var(--colors-red);
+  }
