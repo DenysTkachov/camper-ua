@@ -4,7 +4,7 @@ import { Car } from "../Car/Car";
 import styles from "./CatalogCampers.module.css";
 import { useState } from "react";
 
-export const CatalogCampers = () => {
+const CatalogCampers = () => {
   const [visibleCars, setVisibleCars] = useState(4);
   const filteredCars = useSelector(selectFilteredCars);
 
@@ -32,4 +32,7 @@ export const CatalogCampers = () => {
       )}
     </div>
   );
-};
+}; 
+
+
+export default CatalogCampers

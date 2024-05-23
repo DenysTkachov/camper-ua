@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import { Suspense, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Header } from "../Header/Header";
-import { Loader } from "../Loader/Loader";
+import { Header } from "../Header/Header.jsx";
+import { Loader } from "../Loader/Loader.jsx";
 import { fetchCars } from "../../redux/cars/operations";
 
-export const AppLayout = () => {
+const AppLayout = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCars());
@@ -24,3 +24,5 @@ export const AppLayout = () => {
     </>
   );
 };
+
+export default AppLayout
