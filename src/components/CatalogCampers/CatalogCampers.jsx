@@ -1,10 +1,9 @@
 import { useSelector } from "react-redux";
-import { selectFilteredCars } from "../../redux/cars/carsSelectors";
 import { Car } from "../Car/Car";
 import styles from "./CatalogCampers.module.css";
 import { useState } from "react";
 
-const CatalogCampers = () => {
+export const CatalogCampers = () => {
   const [visibleCars, setVisibleCars] = useState(4);
   const filteredCars = useSelector(selectFilteredCars);
 
@@ -35,4 +34,4 @@ const CatalogCampers = () => {
 }; 
 
 
-export default CatalogCampers
+// export default CatalogCampers;

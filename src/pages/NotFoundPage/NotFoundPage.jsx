@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
- function NotFoundPage() {
+export function NotFoundPage() {
   return (
     <section>
       <div>Not Found Page</div>
@@ -11,4 +11,4 @@ import { Link } from "react-router-dom";
   );
 }
 
-export default NotFoundPage;
+// export default NotFoundPage;

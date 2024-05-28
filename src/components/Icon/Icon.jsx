@@ -1,7 +1,7 @@
 import sprite from "../../assets/sprite.svg";
 import PropTypes from 'prop-types';
 
-const Icon = ({ styles, width, height, iconId }) => {
+export const Icon = ({ styles, width, height, iconId }) => {
   return (
     <>
       <svg style={styles} width={width} height={height}>
@@ -18,4 +18,4 @@ Icon.propTypes = {
     iconId: PropTypes.string.isRequired,
   };
   
-  export default Icon;
+  // export default Icon;

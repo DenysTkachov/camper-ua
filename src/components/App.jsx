@@ -8,7 +8,7 @@ const CatalogPage = lazy(() => import("../pages/CatalogPage/CatalogPage"));
 const FavouritePage = lazy(() => import("../pages/FavoritesPage/FavoritesPage"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage/NotFoundPage"));
 
-function App() {
+export function App() {
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;

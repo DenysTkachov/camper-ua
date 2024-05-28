@@ -1,8 +1,8 @@
 
-import MainInformation from '../../components/MainInformation/MainInformation.jsx';
+import {MainInformation} from '../../components/MainInformation/MainInformation.jsx';
 import './HomePage.module.css';
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <div>
       <MainInformation />
@@ -10,4 +10,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage;
+// export default HomePage;

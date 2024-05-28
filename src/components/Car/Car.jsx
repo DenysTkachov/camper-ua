@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 import { toggleFavourite } from "../../redux/cars/carsSlice";
 import { useIsFavourite } from "../../hooks/useIsFavourite";
 import { Icon } from "../Icon/Icon.jsx";
-import { CarModal } from "../CarModal/CarModal";
+import { CarModal } from "../CarModal/CarModal.jsx";
 import { Details } from "../Details/Details";
 import { Detail } from "../Details/Detail";
 import styles from "./Car.module.css";
 
 
-const Car = ({ car, hidden }) => {
+export const Car = ({ car, hidden }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
 
@@ -98,4 +98,4 @@ Car.propTypes = {
 
 
 
-export default Car;
+// export default Car;

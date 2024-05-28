@@ -5,7 +5,7 @@ import { Header } from "../Header/Header.jsx";
 import { Loader } from "../Loader/Loader.jsx";
 import { fetchCars } from "../../redux/cars/operations";
 
-const AppLayout = () => {
+export const AppLayout = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCars());
@@ -25,4 +25,4 @@ const AppLayout = () => {
   );
 };
 
-export default AppLayout
+// export default AppLayout;

@@ -61,3 +61,4 @@ ReviewsPopUp.propTypes = {
       })
     ).isRequired,
   };
+  

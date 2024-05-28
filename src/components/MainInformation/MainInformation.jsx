@@ -1,6 +1,6 @@
-import styles from "./MainInformationContainer.module.css";
+import styles from "./MainInformation.module.css";
 
-const MainInformation = () => {
+export const MainInformation = () => {
   return (
     <div className={styles.MainInformationContainer}>
       <div className={styles.GreetingWrapper}>
@@ -15,4 +15,4 @@ Explore the world with Camper-UA - your trusted partner for exhilarating expedit
 };
 
 
-export default MainInformation;
+// export default MainInformation;

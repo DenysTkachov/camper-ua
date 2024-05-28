@@ -1,6 +1,6 @@
 
 
-const FavoritesPage = () => {
+export const FavoritesPage = () => {
   return (
     <div>
       <h1>Улюблені оголошення</h1>
@@ -9,4 +9,4 @@ const FavoritesPage = () => {
   );
 }
 
-export default FavoritesPage;
+// export default FavoritesPage;

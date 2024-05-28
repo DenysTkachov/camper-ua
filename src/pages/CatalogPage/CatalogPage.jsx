@@ -1,4 +1,4 @@
-import { CatalogCampers } from "../../components/CatalogCampers/CatalogCampers";
+import { CatalogCampers } from "../../components/CatalogCampers/CatalogCampers.jsx";
 
 
 const CatalogPage = () => {
